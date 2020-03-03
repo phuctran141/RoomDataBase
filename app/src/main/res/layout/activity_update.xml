@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateActivity">
+    <Toolbar
+        android:id="@+id/idudToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_below="@id/idudToolbar"
+        android:layout_marginTop="20dp"
+        android:hint="Họ và tên:"
+        android:id="@+id/edtudTensv"
+        tools:text="Nguyen Văn A"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/edtudNamsinh"
+        android:layout_below="@+id/edtudTensv"
+        android:hint="Nam sinh"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/edtudQuequan"
+        android:layout_below="@+id/edtudNamsinh"
+        android:hint="Que quán"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnudThem"
+        android:layout_below="@+id/edtudQuequan"
+        android:text="Thêm"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnudXoa"
+        android:layout_below="@+id/btnudThem"
+        android:text="Xóa"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

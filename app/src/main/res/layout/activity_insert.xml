@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InsertActivity">
+    <Toolbar
+        android:id="@+id/idToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_below="@id/idToolbar"
+        android:layout_marginTop="20dp"
+        android:hint="Họ và tên:"
+        android:id="@+id/edtTensv"
+        android:maxLines="1"
+        android:lines="1"
+        android:inputType="text|textAutoCorrect"
+        tools:text="Nguyen Văn A"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/edtNamsinh"
+        android:layout_below="@+id/edtTensv"
+        android:hint="Nam sinh"
+        android:maxLines="1"
+        android:lines="1"
+        android:inputType="number"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/edtQuequan"
+        android:layout_below="@+id/edtNamsinh"
+        android:maxLines="1"
+        android:lines="1"
+        android:hint="Que quán"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnThem"
+        android:layout_below="@+id/edtQuequan"
+        android:text="Thêm"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnXoa"
+        android:layout_below="@+id/btnThem"
+        android:text="Xóa"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>
