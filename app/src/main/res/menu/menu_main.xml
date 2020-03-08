@@ -7,5 +7,9 @@
         android:title="Insert"
         android:icon="@drawable/icon_insert"
         />
+    <item android:id="@+id/item_delete"
+        app:showAsAction="always"
+        android:title="Delele"
+        android:icon="@drawable/delete"/>
 
 </menu>

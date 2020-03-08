@@ -22,21 +22,37 @@
         android:id="@+id/namsinhsv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
-    <Button
+    <ImageButton
         android:id="@+id/btnEdit"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="20dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_toLeftOf="@id/btndelete"
+        android:layout_marginRight="10dp"
         android:layout_marginTop="5dp"
-        android:text="Edit"
+        android:text=""
         android:textSize="25sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:src="@drawable/edit"
+        android:scaleType="fitXY"
+       />
+
+    <ImageButton
+        android:id="@+id/btndelete"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/delete"
+        android:scaleType="fitXY"
+        android:text=""
+        android:textSize="25sp" />
+
     <TextView
         android:id="@+id/quequansv"
         android:layout_alignTop="@id/namsinhsv"
         tools:text="tp Hồ Chí Minh"
         android:textSize="25sp"
-        android:layout_alignEnd="@id/btnEdit"
+        android:layout_alignEnd="@id/btndelete"
         android:layout_below="@id/hotensv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>

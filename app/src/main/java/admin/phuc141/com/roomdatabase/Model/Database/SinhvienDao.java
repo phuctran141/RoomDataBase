@@ -11,14 +11,14 @@ import io.reactivex.Observable;
 
 @Dao
 public interface SinhvienDao {
-
-    @Query("SELECT * FROM sinhvien")
+    @Query("SELECT * FROM sinhvien")//("SELECT * FROM sinhvien LIMIT 5")
     Observable<List<Sinhvien>> getAllListObservable();
     @Insert()
     List<Long> insertSinhvien (Sinhvien ...sinhviens);
     @Delete
-    public void delete(Sinhvien sinhvien);
+    void delete(Sinhvien sinhvien);
+    @Query("DELETE FROM sinhvien")
+    void deleteAll();
     @Update
-    public void update(Sinhvien sinhvien);
-
+    int update(Sinhvien sinhvien);
 }

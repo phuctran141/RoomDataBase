@@ -27,25 +27,15 @@ public class InsertActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_insert);
-        toolbar = findViewById(R.id.idToolbar);
-        getSupportActionBar().hide();
-        setActionBar(toolbar);
-        setTitle("THÊM SINH VIÊN");
-        getActionBar().setDisplayHomeAsUpEnabled(true);
-        getActionBar().setDisplayShowHomeEnabled(true);
-        mainViewModel = new MainViewModel();
+        mapview();
+        init();
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 Intent intent = new Intent(InsertActivity.this,MainActivity.class);
                 startActivity(intent);
             }
         });
-        setListener();
-        observable();
-        mapview();
-
         mbtnThem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -66,30 +56,30 @@ public class InsertActivity extends AppCompatActivity {
                 }
             }
         });
-
-
-
-
+        mbtnXoa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                medtNamsinh.setText("");
+                medtQuequan.setText("");
+                mEdtTen.setText("");
+            }
+        });
     }
 
+    private void init() {
+        toolbar = findViewById(R.id.idToolbar);
+        getSupportActionBar().hide();
+        setActionBar(toolbar);
+        setTitle("THÊM SINH VIÊN");
+        getActionBar().setDisplayHomeAsUpEnabled(true);
+        getActionBar().setDisplayShowHomeEnabled(true);
+        mainViewModel = new MainViewModel();
+    }
     private void mapview() {
         mbtnThem =findViewById(R.id.btnThem);
         mbtnXoa= findViewById(R.id.btnXoa);
         mEdtTen= findViewById(R.id.edtTensv);
         medtNamsinh= findViewById(R.id.edtNamsinh);
         medtQuequan= findViewById(R.id.edtQuequan);
-
-
-
-    }
-
-    private void observable() {
-    }
-
-    private void setListener() {
-
-//
-//       mainViewModel.getAllSinhvien(InsertActivity.this);
-
     }
 }

@@ -9,15 +9,17 @@
         android:id="@+id/idudToolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+
     <EditText
+        android:id="@+id/edtudTensv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@id/idudToolbar"
         android:layout_marginTop="20dp"
         android:hint="Họ và tên:"
-        android:id="@+id/edtudTensv"
-        tools:text="Nguyen Văn A"
+        android:inputType="text|textCapWords"
         android:textSize="25sp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        tools:text="Nguyen Văn A" />
     <EditText
         android:layout_marginTop="20dp"
         android:id="@+id/edtudNamsinh"

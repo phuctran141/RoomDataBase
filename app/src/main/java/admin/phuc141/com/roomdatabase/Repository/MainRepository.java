@@ -32,7 +32,8 @@ public class MainRepository  {
     public List<Long> insertSinhvien(Sinhvien...sinhviens){
         return sinhvienDao.insertSinhvien(sinhviens);
     }
-    public void deletesinhvien (Sinhvien sinhvien){
-        sinhvienDao.delete(sinhvien);
-    }
+    public void updateRoomSinhvien (Sinhvien sinhvien) {sinhvienDao.update(sinhvien);}
+    public void updateSinhvien (Sinhvien sinhvien) {sinhvienDao.update(sinhvien);}
+    public void deletesinhvien (Sinhvien sinhvien){ sinhvienDao.delete(sinhvien);}
+    public void deleteAllSinhvien(){sinhvienDao.deleteAll();}
 }
